@@ -1,0 +1,33 @@
+Plug 'tpope/vim-commentary'
+
+nmap <C-w>\| <Action>(MaximizeEditorInSplit)
+nmap <C-w>= <Action>(MaximizeEditorInSplit)
+
+nmap <C-w><Down> <Action>(StretchSplitToBottom)
+nmap <C-w><Left> <Action>(StretchSplitToLeft)
+nmap <C-w><Right> <Action>(StretchSplitToRight)
+nmap <C-w><Up> <Action>(StretchSplitToTop)
+
+nmap gi :action GotoImplementation<CR>
+nmap gy :action GotoTypeDeclaration<CR>
+nmap gu :action ShowUsages<CR>
+nmap gt :action GotoTest<CR>
+nmap :make :action Build<CR>
+
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+
+set clipboard+=unnamed
+set scrolloff=10
+set showmode
+set showcmd
+set visualbell
+
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+set surround
+set highlightedyank
+set nerdtree
