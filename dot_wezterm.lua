@@ -8,9 +8,9 @@ config.hyperlink_rules = wezterm.default_hyperlink_rules()
 config.font = wezterm.font 'Fira Code'
 config.font_size = 12.0
 config.window_padding = {
-  left = 10,
-  right = 10,
-  top = 0,
+  left = 20,
+  right = 20,
+  top = 5,
   bottom = 0,
 }
 

@@ -12,7 +12,7 @@ nmap gi :action GotoImplementation<CR>
 nmap gy :action GotoTypeDeclaration<CR>
 nmap gu :action ShowUsages<CR>
 nmap gt :action GotoTest<CR>
-nmap :make :action Build<CR>
+" command! make :action Build<CR>
 
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)

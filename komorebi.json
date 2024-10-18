@@ -7,6 +7,7 @@
     "default_container_padding":10,
     "border":true,
     "border_width":3,
+    "mouse_follows_focus":false,
     "border_offset":-1,
     "theme":{
         "palette":"Base16",
@@ -27,7 +28,7 @@
                 {
                     "name":"web",
                     "layout":"BSP",
-                    "workspace_rules":[
+                    "intial_workspace_rules":[
                         {
                             "kind":"Exe",
                             "id":"opera.exe",
@@ -38,7 +39,7 @@
                 {
                     "name":"comms",
                     "layout":"BSP",
-                    "workspace_rules":[
+                    "initial_workspace_rules":[
                         {
                             "kind":"Exe",
                             "id":"ms-teams.exe",
@@ -57,7 +58,7 @@
                     ]
                 },
                 {
-                    "name":"music",
+                    "name":"div",
                     "layout":"BSP",
                     "workspace_rules":[
                         {
@@ -74,7 +75,7 @@
                 {
                     "name":"dev",
                     "layout":"BSP",
-                    "workspace_rules":[
+                    "initial_workspace_rules":[
                         {
                             "kind":"Exe",
                             "id":"rider64.exe",
@@ -85,7 +86,7 @@
                 {
                     "name":"cli",
                     "layout":"BSP",
-                    "workspace_rules":[
+                    "initial_workspace_rules":[
                         {
                             "kind":"Exe",
                             "id":"wezterm-gui.exe",
@@ -94,9 +95,9 @@
                     ]
                 },
                 {
-                    "name":"leo",
-                    "layout":"VerticalStack",
-                    "workspace_rules":[
+                    "name":"env",
+                    "layout":"UltrawideVerticalStack",
+                    "initial_workspace_rules":[
                         {
                             "kind":"Exe",
                             "id":"TPG.Sim.Leo2A8Nor",

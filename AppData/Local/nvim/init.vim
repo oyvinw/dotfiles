@@ -2,13 +2,18 @@ let mapleader = ' '
 " vim.keymap.set("n", "<leader>ve", load_init_file)
 
 set number
-set clipboard+=unnamedplus
+set clipboard+=unnamed
+set scrolloff=10
+set showmode
+set showcmd
 set background=dark
 set backspace=2 
+set termguicolors
 
 set smartcase
 set ignorecase
 set hlsearch
+set incsearch
 
 " Tab completion settings
 set wildmode=full     " Wildcard matches show a list, matching the longe
@@ -35,8 +40,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "Plug 'ray-x/go.nvim'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "
-"Plug 'Verf/telescope-everything.nvim'
-Plug 'oyvinw/telescope-everything.nvim'
+Plug 'Verf/telescope-everything.nvim'
+" Plug 'oyvinw/telescope-everything.nvim'
 
 " Lsp
 Plug 'neovim/nvim-lspconfig'
@@ -76,9 +81,8 @@ require('telescope').setup {
 		path_display = {"truncate"}
 	},
 	    extensions = {
-       		 everything = {
-
-            es_path = "f:/utils/es.exe",
+       	everything = {
+        es_path = "C:/utils/everything/es.exe",
 	    path = false,
 	    parent = false,
 	    parent_path = true,
