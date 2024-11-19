@@ -56,6 +56,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'mtdl9/vim-log-highlighting'
 
 Plug 'stevearc/dressing.nvim'
 Plug 'nvim-lua/plenary.nvim'

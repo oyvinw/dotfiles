@@ -2,16 +2,21 @@
 
 # Reload whkd configuration
 # alt + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
-alt + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+alt + w                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
 alt + shift + o         : komorebic reload-configuration
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
 # alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+alt + a                 : start alacritty
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+alt + s                 : if ($wshell.AppActivate('slack') -eq $False) { start slack }
+alt + r                 : if ($wshell.AppActivate('Rider') -eq $False) { start rider }
+alt + o                 : if ($wshell.AppActivate('Outlook') -eq $False) { start outlook }
 
 alt + q                 : komorebic close
-alt + m                 : komorebic minimize
+# alt + m                 : komorebic minimize
+alt + m                 : komorebic toggle-maximize
 
 # Focus windows
 alt + h                 : komorebic focus left
@@ -33,8 +38,8 @@ alt + left              : komorebic stack left
 alt + down              : komorebic stack down
 alt + up                : komorebic stack up
 alt + right             : komorebic stack right
-alt + oem_1             : komorebic unstack # oem_1 is ;
-alt + oem_4             : komorebic cycle-stack previous # oem_4 is [
+alt + u                 : komorebic unstack # oem_1 is ;
+alt + n                 : komorebic cycle-stack previous # oem_4 is [
 alt + oem_6             : komorebic cycle-stack next # oem_6 is ]
 
 # Resize

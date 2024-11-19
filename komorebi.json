@@ -3,12 +3,18 @@
     "app_specific_configuration_path":"$Env:USERPROFILE/applications.yaml",
     "window_hiding_behaviour":"Cloak",
     "cross_monitor_move_behaviour":"Insert",
-    "default_workspace_padding":10,
-    "default_container_padding":10,
-    "border":true,
-    "border_width":3,
-    "mouse_follows_focus":false,
+    "default_workspace_padding":0,
+    "default_container_padding":0,
+    "border":false,
+    "border_width":0,
+    "mouse_follows_focus":true,
+    "transparency":true,
+    "transparency_alpha":225,
     "border_offset":-1,
+    "bar_configurations": [
+        "C:\\users\\ohw\\komorebi.bar2.json",
+        "C:\\users\\ohw\\komorebi.bar.json"
+    ],
     "theme":{
         "palette":"Base16",
         "name":"Vesper",
@@ -90,6 +96,26 @@
                         {
                             "kind":"Exe",
                             "id":"wezterm-gui.exe",
+                            "matching_strategy":"Equals"
+                        },
+                        {
+                            "kind":"Exe",
+                            "id":"alacritty.exe",
+                            "matching_strategy":"Equals"
+                        },
+                        {
+                            "kind":"Exe",
+                            "id":"WindowsTerminal.exe",
+                            "matching_strategy":"Equals"
+                        },
+                        {
+                            "kind":"Exe",
+                            "id":"pwsh.exe",
+                            "matching_strategy":"Equals"
+                        },
+                        {
+                            "kind":"Exe",
+                            "id":"cmd",
                             "matching_strategy":"Equals"
                         }
                     ]

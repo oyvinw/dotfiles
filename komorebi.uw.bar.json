@@ -4,23 +4,10 @@
     "index": 1,
     "work_area_offset": {
       "left": 0,
-      "top": 30,
+      "top": 80,
       "right": 0,
-      "bottom": 30
+      "bottom": 40
     }
-  },
- "viewport": {
-    "inner_size": {
-      "x": 2560,
-      "y": 30,
-    }
-  },
-  "frame":{
-    "inner_margin": 
-        {
-            "x": 50, 
-            "y": 0
-        }
   },
   "font_family": "JetBrains Mono",
   "theme": {
@@ -46,6 +33,28 @@
     }
   ],
   "right_widgets": [
+    {
+      "Media": {
+        "enable": true
+      }
+    },
+    {
+      "Storage": {
+        "enable": true
+      }
+    },
+    {
+      "Memory": {
+        "enable": true
+      }
+    },
+    {
+      "Network": {
+        "enable": true,
+        "show_total_data_transmitted": true,
+        "show_network_activity": true
+      }
+    },
     {
       "Date": {
         "enable": true,

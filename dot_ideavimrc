@@ -1,4 +1,13 @@
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'justinmk/vim-sneak'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'preservim/nerdtree'
+
+let g:s_next = 1
+
+let mapleader = ' '
 
 nmap <C-w>\| <Action>(MaximizeEditorInSplit)
 nmap <C-w>= <Action>(MaximizeEditorInSplit)
@@ -12,7 +21,29 @@ nmap gi :action GotoImplementation<CR>
 nmap gy :action GotoTypeDeclaration<CR>
 nmap gu :action ShowUsages<CR>
 nmap gt :action GotoTest<CR>
-" command! make :action Build<CR>
+" nmap l :action g:NERDTreeMapActivateNode<CR>
+
+map <Leader>b :action BuildSolutionAction<CR>
+map <Leader>r :action Run<CR>
+map <Leader>d :action Debug<CR>
+map <Leader>s :action Stop<CR>
+map <Leader>cp :action RiderManageRecentProjects<CR>
+
+" nnoremap <leader>ff <cmd>Telescope find_files<cr>
+map <leader>fe :action SearchEverywhere<CR>
+map <leader>fg :action TextSearchAction<CR>
+map <leader>ff :action GotoFile<CR>
+map <leader>fc :action GotoClass<CR>
+map <leader>fa :action GotoAction<CR>
+
+" nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+" nnoremap <leader>fb <cmd>Telescope buffers<cr>
+" nnoremap <leader>fh <cmd>Telescope help_tags<cr><CR
+
+GoToFile
+command! make :action BuildSolutionAction<CR>
+command! run :action Run
+command! debug :action Debug
 
 inoremap <C-j> <Action>(PopupMenu-selectNext)
 inoremap <C-k> <Action>(PopupMenu-selectPrev)
@@ -28,6 +59,4 @@ set smartcase
 set incsearch
 set hlsearch
 
-set surround
-set highlightedyank
-set nerdtree
+let g:NERDTreeMapActivateNode = 'l'
