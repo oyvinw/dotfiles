@@ -1,5 +1,3 @@
-shell = "pwsh"
-working_directory = "c:\\users\\ohw"
 
 keyboard.bindings = [
 { key = ",", mods = "Control", mode = "~Search", action = "ToggleViMode" }]
@@ -59,3 +57,9 @@ blue = "#78824b"
 magenta = "#bb7744"
 cyan = "#c9a554"
 white = "#d7c483"
+
+[general]
+working_directory = "c:\\users\\ohw"
+
+[terminal]
+shell = "pwsh"
